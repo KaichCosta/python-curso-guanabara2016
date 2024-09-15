@@ -12,36 +12,11 @@ print('É um caractere composto apenas por letras maiúsculas? ',valor.isupper()
 
 
 #==================================
-
-from random import randint
-maquina = randint(0,5)
-try: 
-
-#==================================      
-    tentativa = int(input('Tente adivinhar o número que estou pensando de 1 a 5 = '))
-    print('Tente adivinhar o número que estou pensando de 1 a 5 = ')
-    if tentativa==maquina:
-        print('Parabéns, você acertou o número')
-    else:
-        print('Errou! Eu pensei em {}Tente novamente'.format(maquina))
-    print('---FIM---') 
-except:ValueError 
-print('Digite um número inteiro por favor') 
-
-print('Escolha 3 números')
-n1=int(input('Número 1 = '))
-n2=int(input('Número 2 = '))
-n3=int(input('Número 3 = '))
-maior= 0
-menor= 0
-if n2 > n1:
-    n2 = maior
+print('Escolha 3 valor pra definirmos se pode ser formado um triângulo')
+v1=int(input('Valor 1 = '))
+v2=int(input('Valor 2 = '))
+v3=int(input('Valor 3 = '))
+if v1 < v2 + v3 and v2 < v1 + v3 and v3 < v1 + v2:
+    print('É possível formar um triângulo')
 else:
-    n1 = maior
-if n3 > n2: 
-    n3 > maior
-    n1 = menor
-else:
-    n1 > n3
-    n3 = menor
-print('O maior é {} e o menor é {}'.format(maior, menor))
+    print('Não é possível formar um triângulo')          
