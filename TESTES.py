@@ -1,17 +1,5 @@
-print('=*45')
-print('BEM VINDO AO BANCO DE FINANCIAMENTO DE CASAS')
-print('=*45')
+n= int(input('Digite o número que deve ser convertido = '))
+escolha= input('Digite 1) PARA BINÁRIO / 2) PARA OCTAL / 3) PARA HEXADECIMAL')
 
-v=int(input('Qual o valor da casa que você quer comprar? = '))
-s=int(input('Qual o seu salário? = '))
-t=int(input('Quanto anos você quer pagar pelo empréstimo? = '))
-
-meses= t / 12
-prest= v / meses
-trinta= s * 0.3
-
-if prest <= trinta:
-    print('SEU EMPRÉSTIMO PODE SER REALIZADO')
-    print('VOCÊ DEVE PAGAR {} POR MÊS AO BANCO'.format(prest))
-else: 
-    print('SEU EMPRÉSTIMO NÃO PODE SER REALIZADO')
+if escolha == 1:
+    print('Binário = {0:b}'.format(n))
