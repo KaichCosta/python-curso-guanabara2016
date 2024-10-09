@@ -12,11 +12,3 @@ print('É um caractere composto apenas por letras maiúsculas? ',valor.isupper()
 
 
 #==================================
-print('Escolha 3 valor pra definirmos se pode ser formado um triângulo')
-v1=int(input('Valor 1 = '))
-v2=int(input('Valor 2 = '))
-v3=int(input('Valor 3 = '))
-if v1 < v2 + v3 and v2 < v1 + v3 and v3 < v1 + v2:
-    print('É possível formar um triângulo')
-else:
-    print('Não é possível formar um triângulo')          
